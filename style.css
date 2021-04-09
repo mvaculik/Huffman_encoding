@@ -1,0 +1,207 @@
+html {
+    overflow-x: hidden;
+}
+body{
+    transition: 1500ms;
+    margin: 0;
+    padding: 0;
+    background-image: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+}
+.game{
+text-align: center;
+}
+h1{
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 1.5px;
+}
+#title {
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 1.5px;
+    padding: 20px;
+    position: relative;
+    top: 210px;
+    background: #fff; 
+
+    margin: auto;
+    width: 40%;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.6); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.6);
+}
+#selections{
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: 300px;
+}
+.selections img{
+    width: 150px;
+}
+    .selection{
+        margin: 15px;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 100ms;
+    }
+    .selection:hover{
+        transform: scale(1.2);
+    }
+
+#results {
+    z-index: -1;
+
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transition: 2000ms;
+        text-align: center;
+
+        transform-origin: center;
+}
+* {
+    box-sizing: border-box;
+  }
+  .row {
+      position: relative;
+      top: 43%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    .column {
+        float: left;
+        padding: 10px;
+        height: 100px;
+        width: 50%;
+    }
+        #youSelected{
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 90px;
+        height: 100%;
+        float: right;
+        transition: 100ms;
+        }
+        #opponentSelected {
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 90px;
+        height: 100%;
+        transition: 100ms;
+        }
+#playAgain {
+    display: none;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 200px;
+    margin: auto;
+    width: 25%;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.6); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.6);
+}
+    #playAgain:hover {
+    color: aqua;
+    }
+    
+#result {
+    font-size: 30px;
+    padding: 0;
+    position: relative;
+    top: 1.5rem;
+    letter-spacing: 5px;
+}
+
+/*==========MOBILE DEVICE==========*/
+@media only screen and (max-width: 1700px) {
+    #title {
+        font-size: 15px;
+        width: 40%;
+    }
+
+  }
+@media only screen and (max-width: 1380px) {
+    #title {
+        font-size: 15px;
+        width: 50%;
+    }
+    #playAgain {
+        width: 30%;
+    }
+
+  }
+  @media only screen and (max-width: 1100px) {
+    #title {
+        font-size: 11px;
+    }
+    #playAgain {
+        font-size: 15px;
+        width: 30%;
+    }
+
+  }
+@media only screen and (max-width: 950px) {
+    #title {
+        width: 70%;
+    }
+    .row {
+        position: relative;
+        top: 30%;
+    }
+    #playAgain {
+        font-size: 15px;
+        width: 35%;
+    }
+
+  }
+  @media only screen and (max-width: 700px) {
+    .selections img{
+        width: 80px;
+    }
+    #title {
+        width: 80%;
+        font-size: 10px;
+        top: 122px;
+    }
+    #selections{
+        top: 180px;
+    }
+    #playAgain {
+        font-size: 15px;
+        width: 45%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      h1{
+          font-size: 10px;
+      }
+      #title {
+        font-size: 8px;
+        width: 90%;
+    }
+    .selections img{
+        width: 55px;
+    }
+    #playAgain {
+        font-size: 10px;
+        width: 50%;
+    }
+  }

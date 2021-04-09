@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- NOO! DON'T LOOK HERE! IT'S SECRET! -->
+<!--
+__        __     ______              _    _ _____
+\ \      / /\   |  __  |   /\       | |  | |_  __|
+ \ \    / /  \  | |  |_|  /  \      | |__| | | |
+  \ \  / / /\ \ | |   _  / /\ \     |  __  | | |
+   \ \/ / ____ \| |__| |/ ____ \    | |  | |_| |_
+    \__/_/    \_\______|_/    \_\(_)|_|  |_|_____|
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet"> 
+
+    <title>R-P-S GAME</title>
+</head>
+<body>
+    <div class="game" id="game">
+        <h1 id="title">SCISSORS < PAPER < ROCK = GAME</h1>
+        
+
+        <section class="selections" id="selections">
+            <button class="selection" data-selection="rock" onclick="pushTop()"><img src="./icons/rock.png" alt="" srcset=""></button>
+            <button class="selection" data-selection="paper" onclick="pushTop()"><img src="./icons/paper.png" alt="" srcset=""></button>
+            <button class="selection" data-selection="scissors" onclick="pushTop()"><img src="./icons/scissors.png" alt="" srcset=""></button>
+        </section>
+        
+        <div id="results">
+             <div class="row" id="row">
+                 <div class="column" id="column-left">
+                    <div id="youSelected"></div>
+                </div>
+                 <div class="column" id="column-right">
+                    <div id="opponentSelected"></div>
+                </div>
+                <h1 id="result"></h1>
+                <a onclick="window.location.reload();"><h1 id="playAgain">PLAY AGAIN</h1></a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--Scripts-->
+    <script src="main.js"></script>
+
+</body>
+</html>
